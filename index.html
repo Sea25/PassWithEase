@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PassWithEase</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Add Google Fonts links -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation Pane -->
@@ -28,8 +30,10 @@
 
     <!-- Main Content -->
     <div class="container">
+        <!-- Exchange Section -->
         <div class="section" id="exchange-section">
             <h2>Exchange Books</h2>
+            <button id="open-exchange-form">Upload Book for Exchange</button>
             <div class="search-container">
                 <input type="text" class="search-bar" placeholder="Search books...">
                 <button class="clear-search">Clear</button>
@@ -37,14 +41,73 @@
             <div class="book-list" id="exchange-list"></div>
         </div>
 
+        <!-- Sell Section -->
         <div class="section" id="sell-section">
             <h2>Sell Books</h2>
+            <button id="open-sell-form">Upload Book for Sale</button>
             <div class="search-container">
                 <input type="text" class="search-bar" placeholder="Search books...">
                 <button class="clear-search">Clear</button>
             </div>
             <div class="book-list" id="sell-list"></div>
         </div>
+
+        <!-- Tutoring Section -->
+        <section class="section" id="tutoring">
+            <h2>Tutoring Videos</h2>
+            <div class="tutoring-container">
+                <!-- Video Card 1 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://youtu.be/HcOc7P5BMi4?si=SwVST4lC7ulWV63b"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-details">
+                        <h3>HTML</h3>
+                        <p>HTML Tutorial for Beginners. Complete HTML with Notes & Code.</p>
+                    </div>
+                </div>
+
+                <!-- Video Card 2 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://youtu.be/ESnrn1kAD4E?si=zG54T7AhGXGzdOS_"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-details">
+                        <h3>CSS</h3>
+                        <p>CSS Tutorial for Beginners. Complete CSS with Project, Notes & Code</p>
+                    </div>
+                </div>
+
+                <!-- Video Card 3 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://youtu.be/Ez8F0nW6S-w?si=Db8vfCpWr0R8981i"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-details">
+                        <h3>Git and GitHub</h3>
+                        <p>Complete Git and GitHub Tutorial for Beginners.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Contact Section -->
         <section class="section" id="contact">
@@ -81,12 +144,12 @@
                 </div>
             </div>
 
-            <!-- Map (Optional) -->
+            <!-- Map -->
             <div class="map-container">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093747!2d144.9537353153166!3d-37.816279742021665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d8a32f7f8f8!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1633033223456!5m2!1sen!2sus"
-                    width="100%"
-                    height="300"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.634548254233!2d76.33262487354145!3d10.046984972227525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d6f3a60778b%3A0x810be95c9816e984!2sTinkerSpace!5e0!3m2!1sen!2sin!4v1739056825556!5m2!1sen!2sin"
+                    width="600%"
+                    height="450"
                     style="border:0;"
                     allowfullscreen=""
                     loading="lazy">

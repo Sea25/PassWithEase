@@ -1,9 +1,9 @@
 /* CSS Variables for Consistent Theming */
 :root {
-    --primary-color: #5b3d2b;
-    --secondary-color: #7a5a48;
+    --primary-color: #2f478e;
+    --secondary-color: #566aa5;
     --background-color: #f9f9f9;
-    --text-color: #333;
+    --text-color: #25170a;
     --white: #ffffff;
     --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
@@ -11,7 +11,7 @@
 
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Times New Roman, sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
@@ -418,5 +418,108 @@ footer {
 
     .section h2 {
         font-size: 1.5rem;
+    }
+}
+
+/* Tutoring Section Styles */
+#tutoring {
+    background-color: var(--white);
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin-bottom: 30px;
+}
+
+#tutoring h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.tutoring-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.video-card {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.video-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.video-details p {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+/* Responsive Design for Tutoring Section */
+@media (max-width: 768px) {
+    .tutoring-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    #tutoring h2 {
+        font-size: 1.8rem;
+    }
+
+    .video-details h3 {
+        font-size: 1.3rem;
+    }
+
+    .video-details p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tutoring-container {
+        grid-template-columns: 1fr;
+    }
+
+    #tutoring h2 {
+        font-size: 1.5rem;
+    }
+
+    .video-details h3 {
+        font-size: 1.2rem;
+    }
+
+    .video-details p {
+        font-size: 0.8rem;
     }
 }
