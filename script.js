@@ -1,3 +1,4 @@
+// Book Exchange and Sell Functionality
 const exchangeBooks = [
     { title: "Data Structures", author: "John Doe", name: "Alice", contact: "alice@example.com", image: "https://rukminim2.flixcart.com/image/850/1000/kjabs7k0-0/book/f/a/b/data-structures-original-imafyw45k5wcsbsx.jpeg?q=90&crop=false" },
     { title: "Operating Systems", author: "Andrew Tanenbaum", name: "Bob", contact: "bob@example.com", image: "https://bpbonline.com/cdn/shop/products/9789388511711_-_2_600x.jpg?v=1623759679" },
