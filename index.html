@@ -5,40 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PassWithEase</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
+    <!-- Navigation Pane -->
+    <nav class="navigation-pane">
+        <a href="#" id="home-link">🏠 Home</a>
+        <a href="#exchange-section">📚 Exchange</a>
+        <a href="#sell-section">💰 Sell</a>
+        <a href="#tutoring">🎓 Tutoring</a>
+        <a href="#contact">📞 Doubts Clearing</a>
+    </nav>
+
+    <!-- Hero Section -->
     <div class="hero">
-       
         <img src="https://st.depositphotos.com/1000962/1623/i/450/depositphotos_16230293-stock-illustration-clouds-and-sky.jpg" alt="Left Image" class="left-img">
         <img src="https://img.freepik.com/premium-vector/application-service-abstract-concept-vector-illustration-set-saas-technology-software-licensing-subscription-flat-vector-modern-illustration_566886-8699.jpg" alt="Right Image" class="right-img">
         <div class="hero-content">
             <h1>PassWithEase</h1>
             <p>Buy, sell, and exchange semester books effortlessly! Connect with students, save money, and share knowledge.</p>
-            <div class="nav-icons">
-                <a href="#home">🏠 Home</a>
-                <a href="#exchange-section">📚 Exchange</a>
-                <a href="#sell-section">💰 Sell</a>
-                <a href="#tutoring">🎓 Tutoring</a>
-                <a href="#contact">📞 Doubts Clearing</a>
-            </div>
         </div>
     </div>
-    
+
+    <!-- Main Content -->
     <div class="container">
         <div class="section" id="exchange-section">
             <h2>Exchange Books</h2>
-            <input type="text" class="search-bar" placeholder="Search books..." onkeyup="filterBooks('exchange-list')">
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Search books...">
+                <button class="clear-search">Clear</button>
+            </div>
             <div class="book-list" id="exchange-list"></div>
         </div>
 
         <div class="section" id="sell-section">
             <h2>Sell Books</h2>
-            <input type="text" class="search-bar" placeholder="Search books..." onkeyup="filterBooks('sell-list')">
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Search books...">
+                <button class="clear-search">Clear</button>
+            </div>
             <div class="book-list" id="sell-list"></div>
         </div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
