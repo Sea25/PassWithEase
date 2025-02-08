@@ -1,10 +1,22 @@
+/* CSS Variables for Consistent Theming */
+:root {
+    --primary-color: #5b3d2b;
+    --secondary-color: #7a5a48;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --white: #ffffff;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
 /* Navigation Pane */
@@ -13,20 +25,21 @@ body {
     justify-content: center;
     gap: 20px;
     padding: 15px;
-    background-color: #5b3d2b;
+    background-color: var(--primary-color);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
 .navigation-pane a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     font-size: 1.2rem;
-    transition: color 0.3s ease;
+    transition: var(--transition);
 }
 
-.navigation-pane a:hover {
+.navigation-pane a:hover,
+.navigation-pane a:focus {
     color: #f5f5f5;
     text-decoration: underline;
 }
@@ -63,7 +76,7 @@ body {
     background: rgba(255, 255, 255, 0.9);
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow);
     max-width: 90%;
     text-align: center;
 }
@@ -86,10 +99,10 @@ body {
 }
 
 .section {
-    background: white;
+    background: var(--white);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
     margin-bottom: 30px;
 }
 
@@ -111,20 +124,28 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
+    transition: var(--transition);
+}
+
+.search-bar:focus {
+    border-color: var(--primary-color);
+    outline: none;
 }
 
 .clear-search {
     padding: 10px 20px;
-    background-color: #5b3d2b;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--white);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
+    transition: var(--transition);
 }
 
-.clear-search:hover {
-    background-color: #7a5a48;
+.clear-search:hover,
+.clear-search:focus {
+    background-color: var(--secondary-color);
 }
 
 /* Book List */
@@ -140,17 +161,18 @@ body {
     gap: 20px;
     padding: 15px;
     border-bottom: 1px solid #eee;
-    transition: background-color 0.3s ease;
+    transition: var(--transition);
 }
 
 .book-item:hover {
-    background-color: #f9f9f9;
+    background-color: var(--background-color);
 }
 
 .book-item img {
     width: 80px;
     height: 100px;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 .book-details {
@@ -166,10 +188,280 @@ body {
     margin: 5px 0;
     color: #555;
 }
+
+/* Price Container */
+.price-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.price-tag {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.edit-price-button {
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.edit-price-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.price-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 80px;
+}
+
+.save-price-button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.save-price-button:hover {
+    background-color: #218838;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.modal-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Contact Section */
+.contact-container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    flex: 1;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.contact-info {
+    flex: 1;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.contact-info ul li strong {
+    color: var(--text-color);
+}
+
+.contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.submit-button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Map Container */
+.map-container {
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: white;
+    background-color: var(--text-color);
+    color: var(--white);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .navigation-pane {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .navigation-pane a {
+        font-size: 1rem;
+    }
+
+    .search-container {
+        flex-direction: column;
+    }
+
+    .clear-search {
+        width: 100%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 70vh;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .hero .right-img {
+        display: none;
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
 }
