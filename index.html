@@ -6,89 +6,74 @@
     <title>PassWithEase</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+        
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Playfair Display', serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f5f5f5;
             text-align: center;
         }
-
         .hero {
-            position: relative;
-            width: 100%;
             height: 100vh;
-            background: 
-                url('https://img.freepik.com/free-vector/trend-watcher-online-service-platform-specialist-new-business-trends-trend-analysis-project-promotion-online-education-vector-flat-illustration_613284-178.jpg') 0% 0% no-repeat,
-                url('https://img.freepik.com/premium-vector/application-service-abstract-concept-vector-illustration-set-saas-technology-software-licensing-subscription-flat-vector-modern-illustration_566886-8699.jpg') 100% 0% no-repeat;
-            background-size: 50% 100%;
-            background-position: left, right;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
+            position: relative;
+        }
+        .hero img {
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+        .hero .left-img {
+            left: 0;
+        }
+        .hero .right-img {
+            right: 0;
+        }
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.7);
             padding: 20px;
+            border-radius: 10px;
         }
-
-        .hero h1 {
-            font-size: 5rem;
-            color: #808080;
-            animation: fadeInText 2s ease-out;
-        }
-
-        @keyframes fadeInText {
-            0% { opacity: 0; transform: translateY(-20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 1100px;
-            color: #f0f0f0;
-            line-height: 1.6;
-        }
-
         .nav-icons {
             display: flex;
             justify-content: center;
-            gap: 30px;
-            margin-top: 30px;
+            gap: 20px;
+            margin-top: 20px;
         }
-
         .nav-icons a {
             text-decoration: none;
-            color: #fff;
+            color: #5b3d2b;
             font-size: 1.5rem;
         }
-
         .container {
             width: 90%;
             max-width: 1200px;
             margin: 50px auto;
         }
-
         .section {
             background: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
         }
-
         .search-bar {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
         }
-
         .book-item {
             display: flex;
             align-items: center;
             padding: 10px;
             border-bottom: 1px solid #ccc;
         }
-
         .book-item img {
             width: 60px;
             height: 80px;
@@ -98,17 +83,21 @@
 </head>
 <body>
     <div class="hero">
-        <h1>PassWithEase</h1>
-        <p>Welcome to PassWithEase – your one-stop platform for buying, selling, and exchanging semester books effortlessly!</p>
-        <div class="nav-icons">
-            <a href="#home">🏠 Home</a>
-            <a href="#exchange-section">📚 Exchange</a>
-            <a href="#sell-section">💰 Sell</a>
-            <a href="#tutoring">🎓 Tutoring</a>
-            <a href="#contact">📞 Contact</a>
+        <img src="https://st.depositphotos.com/1000962/1623/i/450/depositphotos_16230293-stock-illustration-clouds-and-sky.jpg" alt="Left Image" class="left-img">
+        <img src="https://img.freepik.com/premium-vector/application-service-abstract-concept-vector-illustration-set-saas-technology-software-licensing-subscription-flat-vector-modern-illustration_566886-8699.jpg" alt="Right Image" class="right-img">
+        <div class="hero-content">
+            <h1>PassWithEase</h1>
+            <p>Buy, sell, and exchange semester books effortlessly! Connect with students, save money, and share knowledge.</p>
+            <div class="nav-icons">
+                <a href="#home">🏠 Home</a>
+                <a href="#exchange-section">📚 Exchange</a>
+                <a href="#sell-section">💰 Sell</a>
+                <a href="#tutoring">🎓 Tutoring</a>
+                <a href="#contact">📞 Contact</a>
+            </div>
         </div>
     </div>
-
+    
     <div class="container">
         <div class="section" id="exchange-section">
             <h2>Exchange Books</h2>
@@ -125,13 +114,21 @@
     
     <script>
         const exchangeBooks = [
-            {title: "Data Structures", author: "A Chitra", name: "Alice", contact: "alice@example.com", image: "book1.jpg"},
-            {title: "Operating Systems", author: "Andrew Tanenbaum", name: "Bob", contact: "bob@example.com", image: "book2.jpg"}
+            {title: "Data Structures", author: "John Doe", name: "Alice", contact: "alice@example.com", image: "book1.jpg"},
+            {title: "Operating Systems", author: "Andrew Tanenbaum", name: "Bob", contact: "bob@example.com", image: "book2.jpg"},
+            {title: "Algorithms", author: "Robert Sedgewick", name: "Chris", contact: "chris@example.com", image: "book5.jpg"},
+            {title: "Machine Learning", author: "Tom Mitchell", name: "Daniel", contact: "daniel@example.com", image: "book6.jpg"},
+            {title: "Artificial Intelligence", author: "Stuart Russell", name: "Emma", contact: "emma@example.com", image: "book7.jpg"},
+            {title: "Computer Architecture", author: "David A. Patterson", name: "Frank", contact: "frank@example.com", image: "book8.jpg"}
         ];
 
         const sellBooks = [
             {title: "Computer Networks", author: "James Kurose", name: "Charlie", contact: "charlie@example.com", image: "book3.jpg"},
-            {title: "Database Systems", author: "Raghu Ramakrishnan", name: "David", contact: "david@example.com", image: "book4.jpg"}
+            {title: "Database Systems", author: "Raghu Ramakrishnan", name: "David", contact: "david@example.com", image: "book4.jpg"},
+            {title: "Cybersecurity Essentials", author: "William Stallings", name: "Grace", contact: "grace@example.com", image: "book9.jpg"},
+            {title: "Web Development", author: "Jon Duckett", name: "Henry", contact: "henry@example.com", image: "book10.jpg"},
+            {title: "Cloud Computing", author: "Rajkumar Buyya", name: "Isla", contact: "isla@example.com", image: "book11.jpg"},
+            {title: "Big Data Analytics", author: "Michael Minelli", name: "Jack", contact: "jack@example.com", image: "book12.jpg"}
         ];
 
         function displayBooks(list, elementId) {
@@ -143,13 +140,6 @@
                 bookItem.innerHTML = `<img src="${book.image}" alt="Book"> <div><strong>${book.title}</strong> by ${book.author}<br>Owner: ${book.name}<br>Contact: ${book.contact}</div>`;
                 container.appendChild(bookItem);
             });
-        }
-
-        function filterBooks(listId) {
-            const query = event.target.value.toLowerCase();
-            const books = listId === 'exchange-list' ? exchangeBooks : sellBooks;
-            const filtered = books.filter(book => book.title.toLowerCase().includes(query));
-            displayBooks(filtered, listId);
         }
 
         displayBooks(exchangeBooks, 'exchange-list');
