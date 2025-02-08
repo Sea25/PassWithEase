@@ -189,57 +189,12 @@ body {
     color: #555;
 }
 
-/* Price Container */
-.price-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
+/* Price Tag */
 .price-tag {
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--primary-color);
-    margin: 0;
-}
-
-.edit-price-button {
-    padding: 5px 10px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: var(--transition);
-}
-
-.edit-price-button:hover {
-    background-color: var(--secondary-color);
-}
-
-.price-input {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    width: 80px;
-}
-
-.save-price-button {
-    padding: 5px 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: var(--transition);
-}
-
-.save-price-button:hover {
-    background-color: #218838;
+    margin-top: 10px;
 }
 
 /* Modal Styles */
