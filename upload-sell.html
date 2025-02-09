@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Book for Sale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Book for Sale</h1>
+        <form id="upload-sell-form">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" placeholder="Enter book title" required>
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" id="author" name="author" placeholder="Enter author name" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact</label>
+                <input type="email" id="contact" name="contact" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="text" id="price" name="price" placeholder="Enter book price" required>
+            </div>
+            <div class="form-group">
+                <label for="image">Book Image URL</label>
+                <input type="url" id="image" name="image" placeholder="Enter book image URL" required>
+            </div>
+            <button type="submit" class="submit-button">Upload Book</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
