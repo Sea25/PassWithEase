@@ -70,7 +70,7 @@ For Hardware:
 *Add caption explaining the schematic*
 
 # Build Photos
-![Team](Add photo of your team here)
+![Team](https://github.com/Sea25/PassWithEase/blob/main/team.jpg?raw=true)
 
 
 ![Components](Add photo of your components here)
@@ -79,12 +79,12 @@ For Hardware:
 ![Build](Add photos of build process here)
 *Explain the build steps*
 
-![Final](Add photo of final product here)
+![Final](https://github.com/Sea25/PassWithEase/blob/main/Download1.png?raw=true)
 *Explain the final build*
 
 ### Project Demo
 # Video
-[Add your demo video link here]
+[https://drive.google.com/file/d/1tdtewkIZIe9H38xWOdhrXUbWZK37Cyza/view?usp=drive_link]
 *Explain what the video demonstrates*
 
 # Additional Demos
