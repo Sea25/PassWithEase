@@ -48,13 +48,13 @@ For Software:
 
 # Screenshots (Add at least 3)
 ![Screenshot1](https://github.com/Sea25/PassWithEase/blob/main/Download1.png?raw=true)
-*Add caption explaining what this shows*
+*This is a website called "passwithease" homepage.it is designed for buying and selling.The background is blue themed with navigation icons.*
 
 ![Screenshot2](https://github.com/Sea25/PassWithEase/blob/main/Download2.png?raw=true)
-*Add caption explaining what this shows*
+*This is a web page for exchanging and selling books.In this page we can search books as well as add books details.*
 
 ![Screenshot3](https://github.com/Sea25/PassWithEase/blob/main/Download3.png?raw=true)
-*Add caption explaining what this shows*
+*This is last page of this website.This contain informations of the builders of the website for queries and help.*
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
