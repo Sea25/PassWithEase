@@ -1,4 +1,4 @@
-# [Project Name] 🎯
+# [PassWithEase] 🎯
 
 
 ## Basic Details
@@ -94,6 +94,5 @@ For Hardware:
 - [Sona Elizabeth Abraham]: [HTML]
 - [Shilna P]: [JavaScript]
 - [Safna Sheri]: [CSS]
-
 ---
 Made with ❤️ at TinkerHub
