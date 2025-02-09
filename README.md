@@ -47,13 +47,13 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Download1.png](Add screenshot 1 here with proper name)
+![Screenshot1](https://github.com/Sea25/PassWithEase/blob/main/Download1.png?raw=true)
 *Add caption explaining what this shows*
 
-![Download2.png](Add screenshot 2 here with proper name)
+![Screenshot2](https://github.com/Sea25/PassWithEase/blob/main/Download2.png?raw=true)
 *Add caption explaining what this shows*
 
-![Download3.png](Add screenshot 3 here with proper name)
+![Screenshot3](https://github.com/Sea25/PassWithEase/blob/main/Download3.png?raw=true)
 *Add caption explaining what this shows*
 
 # Diagrams
